@@ -1,0 +1,84 @@
+:root{
+  --primary: #DF2E38;
+  --secondary: #0F3460;
+  --darkmode: #16213E;
+  --lightmode: #F8F6F4;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #27374D;
+}
+
+
+.App{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.calc{
+  width: 100%;
+  max-width: 400px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.display{
+  padding: 16px;
+  text-align: right;
+  background-color: var(--darkmode);
+  color: var(--lightmode);
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.display span{
+  font-size: 14px;
+  color: #aaa;
+}
+
+button{
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+.arithmetic-operators {
+  display: flex;
+}
+
+.arithmetic-operators button{
+  flex: 1 1 0%;
+  background-color: var(--primary);
+  font-weight: 700;
+}
+
+.digits-numbers{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits-numbers button{
+  flex: 1 1 33.333%;
+  max-width: 34%;
+  background-color: var(--darkmode);
+}
